@@ -224,7 +224,7 @@ completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredentia
             [self presentViewController:alert animated:YES completion:nil];
         }
     } else {
-        [challenge.sender useCredential:cre forAuthenticationChallenge:challenge];
+        //[challenge.sender useCredential:cre forAuthenticationChallenge:challenge];
         completionHandler(NSURLSessionAuthChallengePerformDefaultHandling, cre);
     }
 }

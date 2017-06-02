@@ -7,7 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CE203E180B450A9FB63C713 /* libPods-Bowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1E82A2640957E047AA70DA /* libPods-Bowser.a */; };
+		504053AB1ECA6E6900E2506B /* OpenWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */; };
+		5052A8171E954EB4005CD664 /* SDK in Resources */ = {isa = PBXBuildFile; fileRef = 5052A8161E954EB4005CD664 /* SDK */; };
+		5052A8191E955186005CD664 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8181E955186005CD664 /* CoreMedia.framework */; };
+		5052A81B1E955190005CD664 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81A1E955190005CD664 /* CoreVideo.framework */; };
+		5052A81D1E955199005CD664 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81C1E955199005CD664 /* CoreAudio.framework */; };
+		5052A81F1E9551A5005CD664 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81E1E9551A5005CD664 /* AssetsLibrary.framework */; };
+		5052A8211E9551AD005CD664 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8201E9551AD005CD664 /* AudioToolbox.framework */; };
+		5052A8231E9551C4005CD664 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8221E9551C4005CD664 /* VideoToolbox.framework */; };
+		5052A8251E9551E0005CD664 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8241E9551E0005CD664 /* AVFoundation.framework */; };
+		5052A8271E9551EB005CD664 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8261E9551EB005CD664 /* JavaScriptCore.framework */; };
+		5052A8291E9551F5005CD664 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8281E9551F5005CD664 /* OpenGLES.framework */; };
+		5052A82B1E955356005CD664 /* libresolv.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A82A1E955356005CD664 /* libresolv.9.dylib */; };
+		5052A82D1E9553BB005CD664 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A82C1E9553BB005CD664 /* libc++.1.dylib */; };
+		5052A8361E9660C6005CD664 /* OpenWebRTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8311E9660C6005CD664 /* OpenWebRTC.m */; };
+		5052A8371E9660C6005CD664 /* OpenWebRTCNativeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8321E9660C6005CD664 /* OpenWebRTCNativeHandler.m */; };
+		5052A8381E9660C6005CD664 /* OpenWebRTCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8331E9660C6005CD664 /* OpenWebRTCSettings.m */; };
+		5052A8391E9660C6005CD664 /* OpenWebRTCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8341E9660C6005CD664 /* OpenWebRTCUtils.m */; };
+		5052A83A1E9660C6005CD664 /* OpenWebRTCVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8351E9660C6005CD664 /* OpenWebRTCVideoView.m */; };
+		5052A83D1E9660D6005CD664 /* OpenWebRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A83B1E9660D6005CD664 /* OpenWebRTCViewController.m */; };
+		5052A83E1E9660D6005CD664 /* OpenWebRTCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A83C1E9660D6005CD664 /* OpenWebRTCWebView.m */; };
 		6C2B891E16270E5C004FA15F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C2B891D16270E5C004FA15F /* about.html */; };
 		6C733904163ED77B001908E5 /* BowserConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C733903163ED77B001908E5 /* BowserConfirmView.m */; };
 		6C77B9C11599A7C200AFECC2 /* BowserHistory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C77B9C01599A7C200AFECC2 /* BowserHistory.plist */; };
@@ -33,7 +52,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D1E82A2640957E047AA70DA /* libPods-Bowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenWebRTC.framework; sourceTree = "<group>"; };
+		5052A8161E954EB4005CD664 /* SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SDK; path = "../../../openwebrtc-ios-sdk/SDK"; sourceTree = "<group>"; };
+		5052A8181E955186005CD664 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		5052A81A1E955190005CD664 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		5052A81C1E955199005CD664 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		5052A81E1E9551A5005CD664 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		5052A8201E9551AD005CD664 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		5052A8221E9551C4005CD664 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		5052A8241E9551E0005CD664 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		5052A8261E9551EB005CD664 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		5052A8281E9551F5005CD664 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		5052A82A1E955356005CD664 /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = ../../../../../../usr/lib/libresolv.9.dylib; sourceTree = "<group>"; };
+		5052A82C1E9553BB005CD664 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
+		5052A8311E9660C6005CD664 /* OpenWebRTC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTC.m; sourceTree = "<group>"; };
+		5052A8321E9660C6005CD664 /* OpenWebRTCNativeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCNativeHandler.m; sourceTree = "<group>"; };
+		5052A8331E9660C6005CD664 /* OpenWebRTCSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCSettings.m; sourceTree = "<group>"; };
+		5052A8341E9660C6005CD664 /* OpenWebRTCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCUtils.m; sourceTree = "<group>"; };
+		5052A8351E9660C6005CD664 /* OpenWebRTCVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCVideoView.m; sourceTree = "<group>"; };
+		5052A83B1E9660D6005CD664 /* OpenWebRTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCViewController.m; sourceTree = "<group>"; };
+		5052A83C1E9660D6005CD664 /* OpenWebRTCWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCWebView.m; sourceTree = "<group>"; };
 		6C2B891D16270E5C004FA15F /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../bowser-generic/js/about.html"; sourceTree = "<group>"; };
 		6C733902163ED77B001908E5 /* BowserConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowserConfirmView.h; sourceTree = "<group>"; };
 		6C733903163ED77B001908E5 /* BowserConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BowserConfirmView.m; sourceTree = "<group>"; };
@@ -55,8 +93,6 @@
 		B7E3D0EB15625681003DE0F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B7E3D0ED15625681003DE0F1 /* BowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BowserViewController.h; sourceTree = "<group>"; };
 		B7E3D0EE15625681003DE0F1 /* BowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BowserViewController.m; sourceTree = "<group>"; };
-		D3CA9C56F78C9DA31D4A0EC1 /* Pods-Bowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bowser/Pods-Bowser.release.xcconfig"; sourceTree = "<group>"; };
-		E5A6BFE219FE1943478C24E7 /* Pods-Bowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bowser/Pods-Bowser.debug.xcconfig"; sourceTree = "<group>"; };
 		F81B2DFC1A0BC1060053E19A /* Bowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bowser-Bridging-Header.h"; sourceTree = "<group>"; };
 		F81B2DFF1A0BC7580053E19A /* Bookmarks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bookmarks.plist; sourceTree = "<group>"; };
 		F81B2E011A0BD8390053E19A /* BookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewController.h; sourceTree = "<group>"; };
@@ -79,33 +115,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504053AB1ECA6E6900E2506B /* OpenWebRTC.framework in Frameworks */,
+				5052A82D1E9553BB005CD664 /* libc++.1.dylib in Frameworks */,
+				5052A82B1E955356005CD664 /* libresolv.9.dylib in Frameworks */,
+				5052A81D1E955199005CD664 /* CoreAudio.framework in Frameworks */,
 				F82F68581BFC62510026A7DE /* libiconv.tbd in Frameworks */,
+				5052A8251E9551E0005CD664 /* AVFoundation.framework in Frameworks */,
+				5052A8291E9551F5005CD664 /* OpenGLES.framework in Frameworks */,
+				5052A8231E9551C4005CD664 /* VideoToolbox.framework in Frameworks */,
+				5052A81F1E9551A5005CD664 /* AssetsLibrary.framework in Frameworks */,
 				F8E9CB4D1BD4C1C1006ED336 /* libc++.tbd in Frameworks */,
+				5052A8211E9551AD005CD664 /* AudioToolbox.framework in Frameworks */,
+				5052A8271E9551EB005CD664 /* JavaScriptCore.framework in Frameworks */,
 				F8E9CB4B1BD4C1B5006ED336 /* libresolv.tbd in Frameworks */,
-				4CE203E180B450A9FB63C713 /* libPods-Bowser.a in Frameworks */,
+				5052A8191E955186005CD664 /* CoreMedia.framework in Frameworks */,
+				5052A81B1E955190005CD664 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5453F7C90A7521FD86453168 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E5A6BFE219FE1943478C24E7 /* Pods-Bowser.debug.xcconfig */,
-				D3CA9C56F78C9DA31D4A0EC1 /* Pods-Bowser.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B7E3D0C615625681003DE0F1 = {
 			isa = PBXGroup;
 			children = (
+				5052A83B1E9660D6005CD664 /* OpenWebRTCViewController.m */,
+				5052A83C1E9660D6005CD664 /* OpenWebRTCWebView.m */,
+				5052A8311E9660C6005CD664 /* OpenWebRTC.m */,
+				5052A8321E9660C6005CD664 /* OpenWebRTCNativeHandler.m */,
+				5052A8331E9660C6005CD664 /* OpenWebRTCSettings.m */,
+				5052A8341E9660C6005CD664 /* OpenWebRTCUtils.m */,
+				5052A8351E9660C6005CD664 /* OpenWebRTCVideoView.m */,
 				B7E3D11115629DA3003DE0F1 /* generic */,
 				B7E3D0DB15625681003DE0F1 /* Bowser */,
 				B7E3D0D415625681003DE0F1 /* Frameworks */,
 				B7E3D0D215625681003DE0F1 /* Products */,
-				5453F7C90A7521FD86453168 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,11 +164,22 @@
 		B7E3D0D415625681003DE0F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5052A82C1E9553BB005CD664 /* libc++.1.dylib */,
+				504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */,
+				5052A82A1E955356005CD664 /* libresolv.9.dylib */,
 				F82F68571BFC62510026A7DE /* libiconv.tbd */,
 				F8E9CB571BD61222006ED336 /* WebKit.framework */,
 				F8E9CB4C1BD4C1C1006ED336 /* libc++.tbd */,
+				5052A8241E9551E0005CD664 /* AVFoundation.framework */,
+				5052A8181E955186005CD664 /* CoreMedia.framework */,
 				F8E9CB4A1BD4C1B5006ED336 /* libresolv.tbd */,
-				4D1E82A2640957E047AA70DA /* libPods-Bowser.a */,
+				5052A8281E9551F5005CD664 /* OpenGLES.framework */,
+				5052A8261E9551EB005CD664 /* JavaScriptCore.framework */,
+				5052A8221E9551C4005CD664 /* VideoToolbox.framework */,
+				5052A8201E9551AD005CD664 /* AudioToolbox.framework */,
+				5052A81E1E9551A5005CD664 /* AssetsLibrary.framework */,
+				5052A81C1E955199005CD664 /* CoreAudio.framework */,
+				5052A81A1E955190005CD664 /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +187,7 @@
 		B7E3D0DB15625681003DE0F1 /* Bowser */ = {
 			isa = PBXGroup;
 			children = (
+				5052A8161E954EB4005CD664 /* SDK */,
 				F81B2E041A0BFB600053E19A /* Bookmarks */,
 				B7E3D0E415625681003DE0F1 /* BowserAppDelegate.h */,
 				B7E3D0E515625681003DE0F1 /* BowserAppDelegate.m */,
@@ -205,11 +261,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7E3D0F215625681003DE0F1 /* Build configuration list for PBXNativeTarget "Bowser" */;
 			buildPhases = (
-				B136715C188FB4909FC24688 /* Check Pods Manifest.lock */,
 				B7E3D0CD15625681003DE0F1 /* Sources */,
 				B7E3D0CE15625681003DE0F1 /* Frameworks */,
 				B7E3D0CF15625681003DE0F1 /* Resources */,
-				FE805AF655B0428BCB00D1E1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,11 +281,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Bowser;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ericsson Research";
 				TargetAttributes = {
 					B7E3D0D015625681003DE0F1 = {
-						DevelopmentTeam = 53ECQCJXJ4;
+						DevelopmentTeam = HSKUFCWQG9;
 					};
 				};
 			};
@@ -260,6 +314,7 @@
 				F81B2E001A0BC7580053E19A /* Bookmarks.plist in Resources */,
 				B7E3D0E015625681003DE0F1 /* InfoPlist.strings in Resources */,
 				B7E3D0E915625681003DE0F1 /* MainStoryboard_iPhone.storyboard in Resources */,
+				5052A8171E954EB4005CD664 /* SDK in Resources */,
 				B7E3D0EC15625681003DE0F1 /* MainStoryboard_iPad.storyboard in Resources */,
 				F8F3813019D00A6300A1B471 /* Launch Screen.xib in Resources */,
 				6C77B9C11599A7C200AFECC2 /* BowserHistory.plist in Resources */,
@@ -271,44 +326,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B136715C188FB4909FC24688 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FE805AF655B0428BCB00D1E1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bowser/Pods-Bowser-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B7E3D0CD15625681003DE0F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5052A83D1E9660D6005CD664 /* OpenWebRTCViewController.m in Sources */,
+				5052A83E1E9660D6005CD664 /* OpenWebRTCWebView.m in Sources */,
+				5052A8361E9660C6005CD664 /* OpenWebRTC.m in Sources */,
+				5052A8371E9660C6005CD664 /* OpenWebRTCNativeHandler.m in Sources */,
+				5052A8381E9660C6005CD664 /* OpenWebRTCSettings.m in Sources */,
+				5052A8391E9660C6005CD664 /* OpenWebRTCUtils.m in Sources */,
+				5052A83A1E9660C6005CD664 /* OpenWebRTCVideoView.m in Sources */,
 				F89E07B615F8CB5B00262F59 /* AboutViewController.m in Sources */,
 				B7E3D0E215625681003DE0F1 /* main.m in Sources */,
 				B7E3D0E615625681003DE0F1 /* BowserAppDelegate.m in Sources */,
@@ -356,7 +385,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -364,14 +392,18 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -385,6 +417,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"~/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers/**",
+					"/Users/max/dev/webrtc-streaming/bowser/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +433,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -405,13 +440,16 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -419,6 +457,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"~/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers/**",
+					"/Users/max/dev/webrtc-streaming/bowser/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -430,18 +472,31 @@
 		};
 		B7E3D0F315625681003DE0F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5A6BFE219FE1943478C24E7 /* Pods-Bowser.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HSKUFCWQG9;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bowser/Bowser-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GST_DEBUG=5",
+				);
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = (
+					"~/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "Bowser/Bowser-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +506,7 @@
 					VideoToolbox,
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isi.research.max.Bowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -465,27 +521,37 @@
 		};
 		B7E3D0F415625681003DE0F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3CA9C56F78C9DA31D4A0EC1 /* Pods-Bowser.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HSKUFCWQG9;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bowser/Bowser-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				GENERATE_PROFILING_CODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"~/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "Bowser/Bowser-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					VideoToolbox,
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isi.research.max.Bowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

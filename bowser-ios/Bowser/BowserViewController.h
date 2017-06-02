@@ -28,7 +28,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <OpenWebRTC-SDK/OpenWebRTCViewController.h>
+#import <OpenWebRTC-SDK/Hybrid/OpenWebRTCViewController.h>
 
 #import "AboutViewController.h"
 #import "BookmarksViewController.h"

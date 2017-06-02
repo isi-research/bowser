@@ -28,7 +28,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <OpenWebRTC-SDK/OpenWebRTCWebView.h>
+#import <OpenWebRTC-SDK/Hybrid/OpenWebRTCWebView.h>
 
 @interface BowserWebView : OpenWebRTCWebView
 
