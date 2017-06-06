@@ -1,6 +1,5 @@
 //
-//  BowserViewController.h
-//  Bowser
+//  OpenWebRTCWebView.h
 //
 //  Copyright (c) 2014, Ericsson AB.
 //  All rights reserved.
@@ -28,42 +27,25 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Hybrid/OpenWebRTCViewController.h>
+#import <WebKit/WebKit.h>
 
-#import "AboutViewController.h"
-#import "BookmarksViewController.h"
-#import "AddBookmarkViewController.h"
+@protocol OpenWebRTCWebViewDelegate <NSObject>
 
-typedef enum {
-    BowserMenuOptionClearHistory,
-    BowserMenuOptionShowConsole,
-    BowserMenuOptionAboutPage,
-    BowserMenuOptionShowBookmarks,
-    BowserMenuOptionAddBookmark,
-} BowserMenuOption;
+@optional
+- (void)webviewProgress:(float)progress;
+- (void)newOwrMessage:(NSString*)message;
+- (void)newVideoRect:(CGRect)rect forSelfView:(BOOL)rectIsSelfView;
+- (void)newVideoRect:(CGRect)rect rotation:(int)degrees tag:(NSString *)tag;
 
-@interface BowserViewController : OpenWebRTCViewController <UIScrollViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate, BookmarkSelectionDelegate, UIAlertViewDelegate>
+@end
+
+@interface OpenWebRTCWebView : WKWebView
 {
-    bool canChange;
-    bool headerIsAbove;
-    bool consoleIsVisible;
-    bool bookmarksAreVisible;
-    NSMutableArray *bowserHistory;
-    NSArray *filteredHistory;
-    __strong NSString *historyFilePath, *bookmarksFilePath;
+    int resourceCount;
+    int resourceCompletedCount;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *historyTableView;
-
-@property (weak, nonatomic) IBOutlet UIScrollView *headerView;
-@property (weak, nonatomic) IBOutlet UIButton *bookmarkButton;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
-
-@property (weak, nonatomic) IBOutlet UITextField *urlField;
-@property (weak, nonatomic) IBOutlet UIWebView *consoleLogView;
-@property (nonatomic, strong) NSString *lastURL;
-@property (weak, nonatomic) IBOutlet UIView *bookMarkView;
-
-- (void)saveFiles;
+@property (assign) id<OpenWebRTCWebViewDelegate> owrDelegate;
+@property (nonatomic) BOOL webGLEnabled;
 
 @end

@@ -1,8 +1,7 @@
 //
-//  BowserWebView.h
-//  Bowser
+//  OpenWebRTCUtils.h
 //
-//  Copyright (c) 2014, Ericsson AB.
+//  Copyright (c) 2015, Ericsson AB.
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification,
@@ -27,12 +26,27 @@
 //  OF SUCH DAMAGE.
 //
 
-#import <UIKit/UIKit.h>
-#import <Hybrid/OpenWebRTCWebView.h>
+/**
+ *  Various utility methods.
+ */
+@interface OpenWebRTCUtils : NSObject
 
-@interface BowserWebView : OpenWebRTCWebView
+/**
+*  Parses an SDP in a string format and returns an dictionary representation.
+*
+*  @param sdpString The SDP as a string.
+*
+*  @return The dictionary representation of the SDP.
+*/
++ (NSDictionary *)parseSDPFromString:(NSString *)sdpString;
 
-- (void)shrink;
-- (void)restore;
+/**
+ *  Generates an SDP string from a dictionary representation.
+ *
+ *  @param sdpObject The SDP object representation.
+ *
+ *  @return A string representation of the SDP.
+ */
++ (NSString *)generateSDPFromObject:(NSDictionary *)sdpObject;
 
 @end

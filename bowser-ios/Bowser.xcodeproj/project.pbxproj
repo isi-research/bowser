@@ -26,6 +26,8 @@
 		5052A83A1E9660C6005CD664 /* OpenWebRTCVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8351E9660C6005CD664 /* OpenWebRTCVideoView.m */; };
 		5052A83D1E9660D6005CD664 /* OpenWebRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A83B1E9660D6005CD664 /* OpenWebRTCViewController.m */; };
 		5052A83E1E9660D6005CD664 /* OpenWebRTCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A83C1E9660D6005CD664 /* OpenWebRTCWebView.m */; };
+		50E9C6461EE6D99D003225F1 /* OpenWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E9C6451EE6D99D003225F1 /* OpenWebRTC.framework */; };
+		50E9C6521EE6DB2B003225F1 /* Hybrid in Resources */ = {isa = PBXBuildFile; fileRef = 50E9C6471EE6DB2B003225F1 /* Hybrid */; };
 		6C2B891E16270E5C004FA15F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C2B891D16270E5C004FA15F /* about.html */; };
 		6C733904163ED77B001908E5 /* BowserConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C733903163ED77B001908E5 /* BowserConfirmView.m */; };
 		6C77B9C11599A7C200AFECC2 /* BowserHistory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C77B9C01599A7C200AFECC2 /* BowserHistory.plist */; };
@@ -70,6 +72,18 @@
 		5052A8351E9660C6005CD664 /* OpenWebRTCVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCVideoView.m; sourceTree = "<group>"; };
 		5052A83B1E9660D6005CD664 /* OpenWebRTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCViewController.m; sourceTree = "<group>"; };
 		5052A83C1E9660D6005CD664 /* OpenWebRTCWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCWebView.m; sourceTree = "<group>"; };
+		50E9C6451EE6D99D003225F1 /* OpenWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenWebRTC.framework; sourceTree = "<group>"; };
+		50E9C6471EE6DB2B003225F1 /* Hybrid */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Hybrid; sourceTree = "<group>"; };
+		50E9C6481EE6DB2B003225F1 /* OpenWebRTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebRTC.h; sourceTree = "<group>"; };
+		50E9C6491EE6DB2B003225F1 /* OpenWebRTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTC.m; sourceTree = "<group>"; };
+		50E9C64A1EE6DB2B003225F1 /* OpenWebRTCNativeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebRTCNativeHandler.h; sourceTree = "<group>"; };
+		50E9C64B1EE6DB2B003225F1 /* OpenWebRTCNativeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCNativeHandler.m; sourceTree = "<group>"; };
+		50E9C64C1EE6DB2B003225F1 /* OpenWebRTCSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebRTCSettings.h; sourceTree = "<group>"; };
+		50E9C64D1EE6DB2B003225F1 /* OpenWebRTCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCSettings.m; sourceTree = "<group>"; };
+		50E9C64E1EE6DB2B003225F1 /* OpenWebRTCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebRTCUtils.h; sourceTree = "<group>"; };
+		50E9C64F1EE6DB2B003225F1 /* OpenWebRTCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCUtils.m; sourceTree = "<group>"; };
+		50E9C6501EE6DB2B003225F1 /* OpenWebRTCVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWebRTCVideoView.h; sourceTree = "<group>"; };
+		50E9C6511EE6DB2B003225F1 /* OpenWebRTCVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWebRTCVideoView.m; sourceTree = "<group>"; };
 		6C2B891D16270E5C004FA15F /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../bowser-generic/js/about.html"; sourceTree = "<group>"; };
 		6C733902163ED77B001908E5 /* BowserConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowserConfirmView.h; sourceTree = "<group>"; };
 		6C733903163ED77B001908E5 /* BowserConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BowserConfirmView.m; sourceTree = "<group>"; };
@@ -113,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E9C6461EE6D99D003225F1 /* OpenWebRTC.framework in Frameworks */,
 				5052A82D1E9553BB005CD664 /* libc++.1.dylib in Frameworks */,
 				5052A82B1E955356005CD664 /* libresolv.9.dylib in Frameworks */,
 				5052A81D1E955199005CD664 /* CoreAudio.framework in Frameworks */,
@@ -161,6 +176,7 @@
 		B7E3D0D415625681003DE0F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50E9C6451EE6D99D003225F1 /* OpenWebRTC.framework */,
 				5052A82C1E9553BB005CD664 /* libc++.1.dylib */,
 				5052A82A1E955356005CD664 /* libresolv.9.dylib */,
 				F82F68571BFC62510026A7DE /* libiconv.tbd */,
@@ -242,6 +258,17 @@
 		F81B2E041A0BFB600053E19A /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				50E9C6471EE6DB2B003225F1 /* Hybrid */,
+				50E9C6481EE6DB2B003225F1 /* OpenWebRTC.h */,
+				50E9C6491EE6DB2B003225F1 /* OpenWebRTC.m */,
+				50E9C64A1EE6DB2B003225F1 /* OpenWebRTCNativeHandler.h */,
+				50E9C64B1EE6DB2B003225F1 /* OpenWebRTCNativeHandler.m */,
+				50E9C64C1EE6DB2B003225F1 /* OpenWebRTCSettings.h */,
+				50E9C64D1EE6DB2B003225F1 /* OpenWebRTCSettings.m */,
+				50E9C64E1EE6DB2B003225F1 /* OpenWebRTCUtils.h */,
+				50E9C64F1EE6DB2B003225F1 /* OpenWebRTCUtils.m */,
+				50E9C6501EE6DB2B003225F1 /* OpenWebRTCVideoView.h */,
+				50E9C6511EE6DB2B003225F1 /* OpenWebRTCVideoView.m */,
 				F81B2E011A0BD8390053E19A /* BookmarksViewController.h */,
 				F81B2E021A0BD8390053E19A /* BookmarksViewController.m */,
 				F81B2E051A0BFB8A0053E19A /* AddBookmarkViewController.h */,
@@ -317,6 +344,7 @@
 				F8AE2FC219D0A3F40083C6BF /* OpenWebRTC-Logo-w400.png in Resources */,
 				F84D76DD19A368C20039552D /* Images.xcassets in Resources */,
 				6C2B891E16270E5C004FA15F /* about.html in Resources */,
+				50E9C6521EE6DB2B003225F1 /* Hybrid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

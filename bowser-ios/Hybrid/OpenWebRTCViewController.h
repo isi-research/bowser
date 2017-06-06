@@ -1,6 +1,5 @@
 //
-//  BowserViewController.h
-//  Bowser
+//  OpenWebRTCViewController.h
 //
 //  Copyright (c) 2014, Ericsson AB.
 //  All rights reserved.
@@ -28,42 +27,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Hybrid/OpenWebRTCViewController.h>
 
-#import "AboutViewController.h"
-#import "BookmarksViewController.h"
-#import "AddBookmarkViewController.h"
+#import "OpenWebRTCVideoView.h"
+#import "OpenWebRTCWebView.h"
 
-typedef enum {
-    BowserMenuOptionClearHistory,
-    BowserMenuOptionShowConsole,
-    BowserMenuOptionAboutPage,
-    BowserMenuOptionShowBookmarks,
-    BowserMenuOptionAddBookmark,
-} BowserMenuOption;
+@interface OpenWebRTCViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, OpenWebRTCWebViewDelegate>
 
-@interface BowserViewController : OpenWebRTCViewController <UIScrollViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate, BookmarkSelectionDelegate, UIAlertViewDelegate>
-{
-    bool canChange;
-    bool headerIsAbove;
-    bool consoleIsVisible;
-    bool bookmarksAreVisible;
-    NSMutableArray *bowserHistory;
-    NSArray *filteredHistory;
-    __strong NSString *historyFilePath, *bookmarksFilePath;
-}
+@property (nonatomic, strong) IBOutlet OpenWebRTCVideoView *selfView;
+@property (nonatomic, strong) IBOutlet OpenWebRTCVideoView *remoteView;
+@property (strong, nonatomic) IBOutlet OpenWebRTCWebView *browserView;
 
-@property (weak, nonatomic) IBOutlet UITableView *historyTableView;
++ (void)initOpenWebRTC;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *headerView;
-@property (weak, nonatomic) IBOutlet UIButton *bookmarkButton;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
-
-@property (weak, nonatomic) IBOutlet UITextField *urlField;
-@property (weak, nonatomic) IBOutlet UIWebView *consoleLogView;
-@property (nonatomic, strong) NSString *lastURL;
-@property (weak, nonatomic) IBOutlet UIView *bookMarkView;
-
-- (void)saveFiles;
+- (void)setOverlayVideoRenderingEnabled:(BOOL)isEnabled;
+- (BOOL)isOverlayVideoRenderingEnabled;
+- (void)loadRequestWithURL:(NSString *)url;
+- (void)injectJavaScript:(NSString *)script;
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message;
 
 @end

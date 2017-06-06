@@ -1,8 +1,7 @@
 //
-//  BowserWebView.h
-//  Bowser
+//  OpenWebRTCSettings.h
 //
-//  Copyright (c) 2014, Ericsson AB.
+//  Copyright (c) 2015, Ericsson AB.
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification,
@@ -27,12 +26,24 @@
 //  OF SUCH DAMAGE.
 //
 
-#import <UIKit/UIKit.h>
-#import <Hybrid/OpenWebRTCWebView.h>
+#define kOpenWebRTCSettingsDefaultVideoWidth 640
+#define kOpenWebRTCSettingsDefaultVideoHeight 480
+#define kOpenWebRTCSettingsDefaultVideoFramerate 30.0
+#define kOpenWebRTCSettingsDefaultVideoBitrate 768000
 
-@interface BowserWebView : OpenWebRTCWebView
+#define kOpenWebRTCSettingsDefaultAudioBitrate 64000
+#define kOpenWebRTCSettingsDefaultAudioChannels 1
 
-- (void)shrink;
-- (void)restore;
+@interface OpenWebRTCSettings : NSObject
+
+@property (nonatomic, assign) int videoBitrate;
+@property (nonatomic, assign) int videoWidth;
+@property (nonatomic, assign) int videoHeight;
+@property (nonatomic, assign) double videoFramerate;
+
+@property (nonatomic, assign) int audioBitrate;
+@property (nonatomic, assign) int audioChannels;
+
+- (instancetype)initWithDefaults;
 
 @end

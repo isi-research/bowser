@@ -1,8 +1,7 @@
 //
-//  BowserWebView.h
-//  Bowser
+//  OpenWebRTC.h
 //
-//  Copyright (c) 2014, Ericsson AB.
+//  Copyright (c) 2015, Ericsson AB.
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification,
@@ -28,11 +27,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Hybrid/OpenWebRTCWebView.h>
 
-@interface BowserWebView : OpenWebRTCWebView
+#import <OpenWebRTCVideoView.h>
+#import <OpenWebRTCUtils.h>
+#import <OpenWebRTCSettings.h>
+#import <OpenWebRTCNativeHandler.h>
 
-- (void)shrink;
-- (void)restore;
+#import "owr.h"
+
+@interface OpenWebRTC : NSObject
+
+/**
+ *  Initializes OpenWebRTC. Should preferably be run inside your AppDelegate's 
+ *  initialize method to ensure OpenWebRTC has enough time to set things up.
+ */
++ (void)initOpenWebRTC;
 
 @end
