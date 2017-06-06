@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		504053AB1ECA6E6900E2506B /* OpenWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */; };
 		5052A8171E954EB4005CD664 /* SDK in Resources */ = {isa = PBXBuildFile; fileRef = 5052A8161E954EB4005CD664 /* SDK */; };
 		5052A8191E955186005CD664 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8181E955186005CD664 /* CoreMedia.framework */; };
 		5052A81B1E955190005CD664 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81A1E955190005CD664 /* CoreVideo.framework */; };
@@ -52,7 +51,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenWebRTC.framework; sourceTree = "<group>"; };
 		5052A8161E954EB4005CD664 /* SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SDK; path = "../../../openwebrtc-ios-sdk/SDK"; sourceTree = "<group>"; };
 		5052A8181E955186005CD664 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		5052A81A1E955190005CD664 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504053AB1ECA6E6900E2506B /* OpenWebRTC.framework in Frameworks */,
 				5052A82D1E9553BB005CD664 /* libc++.1.dylib in Frameworks */,
 				5052A82B1E955356005CD664 /* libresolv.9.dylib in Frameworks */,
 				5052A81D1E955199005CD664 /* CoreAudio.framework in Frameworks */,
@@ -165,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				5052A82C1E9553BB005CD664 /* libc++.1.dylib */,
-				504053AA1ECA6E6900E2506B /* OpenWebRTC.framework */,
 				5052A82A1E955356005CD664 /* libresolv.9.dylib */,
 				F82F68571BFC62510026A7DE /* libiconv.tbd */,
 				F8E9CB571BD61222006ED336 /* WebKit.framework */,
