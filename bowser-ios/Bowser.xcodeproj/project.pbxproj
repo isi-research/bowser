@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5052A8171E954EB4005CD664 /* SDK in Resources */ = {isa = PBXBuildFile; fileRef = 5052A8161E954EB4005CD664 /* SDK */; };
 		5052A8191E955186005CD664 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A8181E955186005CD664 /* CoreMedia.framework */; };
 		5052A81B1E955190005CD664 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81A1E955190005CD664 /* CoreVideo.framework */; };
 		5052A81D1E955199005CD664 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A81C1E955199005CD664 /* CoreAudio.framework */; };
@@ -53,7 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5052A8161E954EB4005CD664 /* SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SDK; path = "../../../openwebrtc-ios-sdk/SDK"; sourceTree = "<group>"; };
 		5052A8181E955186005CD664 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		5052A81A1E955190005CD664 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		5052A81C1E955199005CD664 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
@@ -199,7 +197,6 @@
 		B7E3D0DB15625681003DE0F1 /* Bowser */ = {
 			isa = PBXGroup;
 			children = (
-				5052A8161E954EB4005CD664 /* SDK */,
 				F81B2E041A0BFB600053E19A /* Bookmarks */,
 				B7E3D0E415625681003DE0F1 /* BowserAppDelegate.h */,
 				B7E3D0E515625681003DE0F1 /* BowserAppDelegate.m */,
@@ -337,7 +334,6 @@
 				F81B2E001A0BC7580053E19A /* Bookmarks.plist in Resources */,
 				B7E3D0E015625681003DE0F1 /* InfoPlist.strings in Resources */,
 				B7E3D0E915625681003DE0F1 /* MainStoryboard_iPhone.storyboard in Resources */,
-				5052A8171E954EB4005CD664 /* SDK in Resources */,
 				B7E3D0EC15625681003DE0F1 /* MainStoryboard_iPad.storyboard in Resources */,
 				F8F3813019D00A6300A1B471 /* Launch Screen.xib in Resources */,
 				6C77B9C11599A7C200AFECC2 /* BowserHistory.plist in Resources */,
