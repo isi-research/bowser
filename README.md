@@ -5,6 +5,15 @@ A WebRTC browser for iOS developed in the open. Bowser is built on top of [OpenW
 
 ![Bowser logo](http://static.squarespace.com/static/53f1eedee4b0439bf8d480c5/t/53f25022e4b0cca46a383183/1408389154850/?format=500w "Bowser logo")
 
+## ISI Install Instructions
+
+This assumes you have checked out and built [OpenWebRTC](www.github.com/isi-research/openwebrtc) for iOS.
+
+* Clone this repo somewhere on your Mac and open Bowser in XCode.
+* Drag and drop the OpenWebRTC.framework that you built into the Frameworks box on the left panel in XCode. You will find OpenWebRTC.framework in ~/Library/Developer/OpenWebRTC/iPhone.sdk. If you don't find it here, it's possible that it's in /Library/Developer/OpenWebRTC/iPhone.skd but this means you didn't install the iOS package for only your user.
+* Update the include paths in Xcode to include all the header files in the repository. Go to build settings and edit Header Search Paths to add the directory where you checked out Bowser. Recursively add this directory. 
+* Go to Product -> Scheme -> Edit Scheme and ensure that you have the release build set for 'Run' if you want to build the optimized version. Else you need to ensure you build for profiling.
+
 ## App Store
 Bowser is not only Open Source, it is also available as a [free download](https://itunes.apple.com/app/bowser/id560478358?mt=8) on the Apple App Store. When improvements have been made to Bowser or OpenWebRTC new versions for the App Store are published by Ericsson Research.
 
